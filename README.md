@@ -93,13 +93,18 @@ npm run check
 ### Prerequisites for Vercel Deployment
 
 1. A [Vercel account](https://vercel.com/signup)
-2. [Vercel CLI](https://vercel.com/docs/cli) installed (optional)
+2. Your code pushed to a Git repository (GitHub, GitLab, or Bitbucket)
 
 ### Deployment Steps
 
-#### Option 1: Deploy via Vercel Dashboard (Recommended)
+#### Deploy via Vercel Dashboard (Recommended)
 
 1. **Push your code to GitHub/GitLab/Bitbucket**
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
 
 2. **Import project to Vercel**
    - Go to [Vercel Dashboard](https://vercel.com/dashboard)
@@ -107,16 +112,16 @@ npm run check
    - Import your repository
 
 3. **Configure Project Settings**
-   - **Framework Preset**: Vite
+   - **Framework Preset**: Other
    - **Root Directory**: `./` (leave as default)
    - **Build Command**: `npm run build`
-   - **Output Directory**: `dist`
+   - **Output Directory**: `dist/public`
    - **Install Command**: `npm install`
 
 4. **Deploy**
    - Click "Deploy"
    - Vercel will build and deploy your application
-   - No additional configuration needed!
+   - The `vercel.json` configuration file will handle routing automatically
 
 #### Option 2: Deploy via Vercel CLI
 
