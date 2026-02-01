@@ -1,0 +1,246 @@
+Create a modern, high-converting static website for a clinical psychologist/therapist using React and Vite. This should be a single-page application (SPA) with smooth scrolling navigation between sections. NO backend or database needed - all content should be easily editable in a central config file.
+
+TECHNICAL REQUIREMENTS:
+- React 18+ with Vite as build tool
+- Fully responsive (mobile-first design)
+- Tailwind CSS for styling
+- React Router for navigation between pages
+- React Icons for iconography
+- Framer Motion for smooth animations
+- Ready to deploy on Vercel (include vercel.json config)
+- All images should use placeholder URLs (unsplash or placeholder.com)
+- Fast loading (<3 seconds)
+- SEO optimized with React Helmet
+
+PROJECT STRUCTURE:
+/src
+  /components
+    - Navbar.jsx (sticky header with smooth scroll)
+    - Hero.jsx
+    - About.jsx
+    - Services.jsx
+    - HowItWorks.jsx
+    - Testimonials.jsx
+    - Resources.jsx
+    - Contact.jsx
+    - Footer.jsx
+    - BookingCTA.jsx (reusable call-to-action component)
+  /pages
+    - Home.jsx (main landing page)
+    - InsuranceFees.jsx
+    - PrivacyPolicy.jsx
+    - Blog.jsx (static blog listing)
+  /data
+    - siteConfig.js (centralized content - easy to edit)
+  /assets
+  App.jsx
+  main.jsx
+  index.css
+
+DESIGN SYSTEM:
+- Color Palette: Calming mental health theme
+  - Primary: Soft teal/blue (#4A90A4 or similar)
+  - Secondary: Warm sage green (#8B9D83)
+  - Neutral: Cream/beige backgrounds (#F9F7F4)
+  - Text: Charcoal gray (#2D3748)
+  - Accent: Gentle coral for CTAs (#E07A5F)
+- Typography: 
+  - Headings: 'Poppins' or 'Inter' (clean, professional)
+  - Body: 'Open Sans' or 'Lato' (readable, warm)
+- Border radius: Soft rounded corners (8-12px)
+- Shadows: Subtle, soft shadows for cards
+- Spacing: Generous whitespace for calmness
+
+HOMEPAGE SECTIONS (in order):
+
+1. HERO SECTION:
+- Large, calming background (soft gradient or subtle pattern)
+- Professional headshot placeholder (circular, left or right side)
+- Compelling headline: "Find Relief from Anxiety & Rediscover Joy"
+- Subheadline: "Compassionate, evidence-based therapy for adults in [City]. You don't have to face this alone."
+- Two CTAs: 
+  - Primary: "Schedule Free Consultation" (prominent button)
+  - Secondary: "Learn How I Can Help" (outline button, scrolls to services)
+- Trust badges below CTAs: "Licensed Clinical Psychologist | 10+ Years Experience | HIPAA Secure"
+
+2. ABOUT/BIO SECTION:
+- Two-column layout (image left, content right on desktop)
+- Warm, professional photo placeholder
+- Headline: "Hi, I'm Dr. [Name]"
+- Personal, empathetic bio (3-4 paragraphs) addressing:
+  - Why I became a therapist
+  - My approach/philosophy
+  - Who I love working with
+- Credentials displayed with icons:
+  - PhD in Clinical Psychology
+  - Licensed in [State]
+  - Member of APA
+  - 1000+ clients helped
+- Small CTA: "Ready to start? Book your consultation"
+
+3. SERVICES SECTION:
+- Grid layout (3 columns on desktop, stacks on mobile)
+- Each service card includes:
+  - Icon (relevant to service)
+  - Service name (e.g., "Anxiety Treatment", "Depression Therapy", "Trauma & PTSD")
+  - Brief description (2-3 sentences)
+  - "What you'll gain" bullet points
+  - Therapy approaches used (CBT, EMDR, etc.)
+- Services to include:
+  1. Individual Therapy (anxiety, depression, stress)
+  2. Trauma & PTSD Treatment
+  3. Relationship & Couples Counseling
+  4. Life Transitions Support
+  5. Telehealth/Online Therapy
+  6. Adolescent & Teen Therapy
+- Bottom CTA: "Not sure which is right for you? Let's talk"
+
+4. HOW IT WORKS SECTION:
+- Headline: "Your Journey to Healing, Step by Step"
+- 4-step process with visual timeline/progression:
+  Step 1: "Book Your Free Consultation" 
+    - 15-minute phone call to discuss your needs
+  Step 2: "Complete Intake Forms"
+    - Secure, HIPAA-compliant forms sent via email
+  Step 3: "First Session"
+    - Get to know each other, set goals, begin healing
+  Step 4: "Ongoing Support"
+    - Regular sessions, progress tracking, lasting change
+- Include "What to expect in first session" expandable FAQ
+- Duration: "Sessions are 50 minutes" | Frequency: "Weekly or bi-weekly"
+
+5. TESTIMONIALS SECTION:
+- Headline: "You're Not Alone - Hear From Others Who've Healed"
+- Card-based layout (3 testimonials visible, carousel/slider optional)
+- Each testimonial card:
+  - Star rating (5 stars)
+  - Quote (2-3 sentences about transformation)
+  - First name + initial (e.g., "Sarah M.")
+  - Issue addressed (e.g., "Anxiety & Depression")
+- Include 6-8 testimonials total
+- Example: "After just 3 months with Dr. [Name], I finally feel like myself again. The anxiety that controlled my life is manageable now." - Jennifer R.
+
+6. INSURANCE & FEES SECTION (brief on homepage):
+- Two-column quick info:
+  - Left: "Insurance Accepted" 
+    - List 4-5 major providers (Aetna, Blue Cross, United, etc.)
+    - "Out-of-network? We can help with reimbursement"
+  - Right: "Transparent Pricing"
+    - Individual session: $150
+    - Couples session: $180
+    - Sliding scale available
+- CTA: "View Full Insurance & Payment Info" (links to dedicated page)
+
+7. RESOURCES SECTION:
+- Headline: "Free Mental Health Resources"
+- 3 featured blog posts/articles (cards with image, title, excerpt)
+- Topics like:
+  - "5 Signs You Might Benefit from Therapy"
+  - "How to Choose the Right Therapist for You"
+  - "Managing Anxiety: Practical Daily Strategies"
+- Downloadable resource offer: "Free Guide: Your First Therapy Session" (email capture form)
+- Crisis resources: "In Crisis? Call 988 Suicide & Crisis Lifeline"
+
+8. CONTACT/BOOKING SECTION:
+- Headline: "Ready to Take the First Step?"
+- Two-column layout:
+  - Left: Contact form
+    - Name, Email, Phone, Preferred Contact Method
+    - Message/What brings you to therapy
+    - "I'd like to schedule a free consultation" checkbox
+    - Submit button: "Send Secure Message"
+  - Right: Contact info
+    - Phone: (555) 123-4567
+    - Email: dr.name@example.com
+    - Office address with embedded Google Maps
+    - Office hours
+    - "We respond within 24 hours"
+- Booking integration placeholder: "Or schedule directly" with Calendly-style mockup
+- Privacy note: "Your information is confidential and HIPAA-protected"
+
+9. FOOTER:
+- Three columns:
+  - Column 1: Quick links (About, Services, Resources, Privacy Policy, Blog)
+  - Column 2: Contact info (phone, email, address)
+  - Column 3: Newsletter signup, Social media icons (optional)
+- Bottom bar: 
+  - "© 2026 Dr. [Name], Licensed Clinical Psychologist"
+  - Licensing info: "Licensed in [State] | License #12345"
+  - HIPAA compliance badge
+  - Links: Privacy Policy | Terms of Service
+
+SEPARATE PAGES:
+
+INSURANCE & FEES PAGE:
+- Detailed insurance information
+- List of all accepted insurance providers
+- Out-of-network reimbursement process explained
+- Session fees breakdown (individual, couples, family)
+- Payment methods accepted
+- Sliding scale policy
+- Superbill information
+- Good Faith Estimate (required by law)
+- FAQ about insurance and billing
+
+PRIVACY POLICY PAGE:
+- HIPAA compliance statement
+- What information is collected
+- How information is protected
+- Confidentiality policies
+- Limits to confidentiality (safety issues)
+- Cookie policy
+- Contact for privacy concerns
+
+BLOG PAGE:
+- Grid of blog post previews (6-8 static posts)
+- Categories: Anxiety, Depression, Relationships, Self-Care, Therapy Tips
+- Each post card: Featured image, title, excerpt, "Read More"
+- Sample post topics provided as examples
+
+COMPONENTS TO BUILD:
+
+BookingCTA Component (reusable):
+- Appears at bottom of each section
+- Two styles: primary (full background) and inline
+- Props: ctaText, buttonText, buttonLink, style variant
+- Example: "Ready to feel better? Schedule your free consultation today"
+
+Navbar Component:
+- Sticky/fixed to top when scrolling
+- Logo/Name on left
+- Navigation links: About | Services | How It Works | Resources | Insurance | Contact
+- Right side: Phone number + "Book Appointment" button (prominent)
+- Mobile: Hamburger menu with smooth slide-in
+- Smooth scroll to sections on same page
+
+INTERACTIVE FEATURES:
+- Smooth scroll navigation
+- Fade-in animations on scroll (Framer Motion)
+- Testimonial carousel/slider
+- FAQ accordion (expand/collapse)
+- Mobile-friendly hamburger menu
+- Hover effects on buttons and cards
+- Form validation (basic client-side)
+- "Back to top" button appears after scrolling
+
+CONTENT CONFIGURATION (siteConfig.js):
+Create a centralized config file with all editable content:
+```javascript
+export const siteConfig = {
+  businessName: "Dr. Jane Smith, PhD",
+  tagline: "Compassionate Therapy for Healing & Growth",
+  phone: "(555) 123-4567",
+  email: "hello@drjanesmith.com",
+  address: "123 Wellness Way, Suite 200, Austin, TX 78701",
+  hero: {
+    headline: "Find Relief from Anxiety & Rediscover Joy",
+    subheadline: "...",
+  },
+  about: {
+    bio: "...",
+    credentials: [...],
+  },
+  services: [...],
+  testimonials: [...],
+  // etc.
+}
