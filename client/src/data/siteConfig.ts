@@ -18,7 +18,7 @@ export const siteConfig = {
 
   about: {
     title: "Meet Your Therapist",
-    name: "Dr. Elena Rivers",
+    name: "Dr. Balkrushna",
     role: "Licensed Clinical Psychologist",
     bio: "With over 15 years of experience in clinical psychology, I specialize in anxiety, depression, and trauma recovery. My approach integrates cognitive-behavioral techniques with mindfulness practices to create a holistic healing environment tailored to your unique needs.",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop" // Professional portrait
@@ -72,7 +72,7 @@ export const siteConfig = {
 
   testimonials: [
     {
-      text: "Dr. Rivers helped me find my voice again. I feel more confident and at peace than I have in years.",
+      text: "Dr. Balkrushna helped me find my voice again. I feel more confident and at peace than I have in years.",
       author: "Sarah J."
     },
     {
